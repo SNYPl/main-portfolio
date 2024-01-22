@@ -1,9 +1,7 @@
 const Contact = () => {
   return (
     <section className="contact main-section flex-column-mobile" id="contact">
-      {/* TITLE STARTS */}
       <div className="custom-title">
-        {/* MAIN TITLE STARTS */}
         <h3>
           <span>
             <span className="animated-layer fade-in-left-animation fadeInUp wow">

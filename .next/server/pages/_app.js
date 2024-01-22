@@ -1,238 +1,86 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 592:
+/***/ "./pages/_app.js":
+/*!***********************!*\
+  !*** ./pages/_app.js ***!
+  \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-// ESM COMPAT FLAG
-__webpack_require__.r(__webpack_exports__);
-
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, {
-  "default": () => (/* binding */ _app)
-});
-
-// EXTERNAL MODULE: external "react/jsx-runtime"
-var jsx_runtime_ = __webpack_require__(997);
-;// CONCATENATED MODULE: ./src/components/Preloader.js
-
-const Preloader = ()=>{
-    return /*#__PURE__*/ jsx_runtime_.jsx("div", {
-        id: "preloader",
-        className: "preloaded",
-        children: /*#__PURE__*/ jsx_runtime_.jsx("div", {
-            className: "line"
-        })
-    });
-};
-/* harmony default export */ const components_Preloader = (Preloader);
-
-;// CONCATENATED MODULE: external "next/head"
-const head_namespaceObject = require("next/head");
-var head_default = /*#__PURE__*/__webpack_require__.n(head_namespaceObject);
-// EXTERNAL MODULE: external "react"
-var external_react_ = __webpack_require__(689);
-;// CONCATENATED MODULE: ./src/components/Switcher.js
-
-
-
-const colors = [
-    {
-        id: 1,
-        name: "yellow"
-    },
-    {
-        id: 2,
-        name: "green"
-    },
-    {
-        id: 3,
-        name: "red"
-    },
-    {
-        id: 4,
-        name: "blue"
-    },
-    {
-        id: 5,
-        name: "orange"
-    },
-    {
-        id: 6,
-        name: "yellowgreen"
-    },
-    {
-        id: 7,
-        name: "pink"
-    },
-    {
-        id: 8,
-        name: "goldenrod"
-    }
-];
-const Switcher = ()=>{
-    const [color, setColor] = (0,external_react_.useState)("yellow");
-    const [toggle, setToggle] = (0,external_react_.useState)(false);
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx((head_default()), {
-                children: /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                    rel: "stylesheet",
-                    href: `css/skins/${color}.css`
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                id: "switcher",
-                className: toggle ? "open" : "close",
-                style: {
-                    display: "block"
-                },
-                children: /*#__PURE__*/ (0,jsx_runtime_.jsxs)("div", {
-                    className: "content-switcher",
-                    children: [
-                        /*#__PURE__*/ jsx_runtime_.jsx("h4", {
-                            children: "COLOR SWITCHER"
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("ul", {
-                            children: colors.map((color)=>/*#__PURE__*/ jsx_runtime_.jsx("li", {
-                                    children: /*#__PURE__*/ jsx_runtime_.jsx("a", {
-                                        href: "#",
-                                        title: color.name,
-                                        className: "color",
-                                        onClick: ()=>setColor(color.name),
-                                        children: /*#__PURE__*/ jsx_runtime_.jsx("img", {
-                                            src: `assets/styleswitcher/${color.name}.png`,
-                                            alt: color.name
-                                        })
-                                    }, color.id)
-                                }, color.id))
-                        }),
-                        /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                            id: "hideSwitcher",
-                            onClick: ()=>setToggle(false),
-                            children: "\xd7"
-                        })
-                    ]
-                })
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("div", {
-                id: "showSwitcher",
-                className: `styleSecondColor ${toggle ? "close" : "open"}`,
-                onClick: ()=>setToggle(true),
-                children: /*#__PURE__*/ jsx_runtime_.jsx("i", {
-                    className: "fa fa-cog"
-                })
-            })
-        ]
-    });
-};
-/* harmony default export */ const components_Switcher = (Switcher);
-
-;// CONCATENATED MODULE: ./src/SalimovHead.js
-
-
-const SalimovHead = ()=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)((head_default()), {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx("title", {
-                children: "David's Portfolio"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                charSet: "utf-8"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("meta", {
-                name: "viewport",
-                content: "width=device-width, initial-scale=1.0"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "preconnect",
-                href: "https://fonts.googleapis.com"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "preconnect",
-                href: "https://fonts.gstatic.com",
-                crossOrigin: ""
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                href: "https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap",
-                rel: "stylesheet"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/devicon.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/all.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/bootstrap.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/swiper-bundle.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/animate.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/jquery.mCustomScrollbar.min.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                href: "css/style.css"
-            }),
-            /*#__PURE__*/ jsx_runtime_.jsx("link", {
-                rel: "stylesheet",
-                type: "text/css",
-                href: "css/styleswitcher.css"
-            })
-        ]
-    });
-};
-/* harmony default export */ const src_SalimovHead = (SalimovHead);
-
-// EXTERNAL MODULE: ./styles/globals.css
-var globals = __webpack_require__(764);
-;// CONCATENATED MODULE: ./pages/_app.js
-
-
-
-
-
-
-const App = ({ Component , pageProps  })=>{
-    return /*#__PURE__*/ (0,jsx_runtime_.jsxs)(external_react_.Fragment, {
-        children: [
-            /*#__PURE__*/ jsx_runtime_.jsx(src_SalimovHead, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(components_Switcher, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(components_Preloader, {}),
-            /*#__PURE__*/ jsx_runtime_.jsx(Component, {
-                ...pageProps
-            })
-        ]
-    });
-};
-/* harmony default export */ const _app = (App);
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _src_components_Preloader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/src/components/Preloader */ \"./src/components/Preloader.js\");\n/* harmony import */ var _src_components_Switcher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/src/components/Switcher */ \"./src/components/Switcher.js\");\n/* harmony import */ var _src_PortfolioHead__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/src/PortfolioHead */ \"./src/PortfolioHead.js\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/styles/globals.css */ \"./styles/globals.css\");\n/* harmony import */ var _styles_globals_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_styles_globals_css__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);\n\n\n\n\n\n\nconst App = ({ Component , pageProps  })=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react__WEBPACK_IMPORTED_MODULE_5__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_src_PortfolioHead__WEBPACK_IMPORTED_MODULE_3__[\"default\"], {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\pages\\\\_app.js\",\n                lineNumber: 10,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_src_components_Switcher__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\pages\\\\_app.js\",\n                lineNumber: 11,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_src_components_Preloader__WEBPACK_IMPORTED_MODULE_1__[\"default\"], {}, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\pages\\\\_app.js\",\n                lineNumber: 12,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n                ...pageProps\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\pages\\\\_app.js\",\n                lineNumber: 13,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\pages\\\\_app.js\",\n        lineNumber: 9,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQW1EO0FBQ0Y7QUFDRDtBQUNsQjtBQUNHO0FBRWpDLE1BQU1JLE1BQU0sQ0FBQyxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBRSxHQUFLO0lBQ3hDLHFCQUNFLDhEQUFDSCwyQ0FBUUE7OzBCQUNQLDhEQUFDRCwwREFBYUE7Ozs7OzBCQUNkLDhEQUFDRCxnRUFBUUE7Ozs7OzBCQUNULDhEQUFDRCxpRUFBU0E7Ozs7OzBCQUNWLDhEQUFDSztnQkFBVyxHQUFHQyxTQUFTOzs7Ozs7Ozs7Ozs7QUFHOUI7QUFDQSxpRUFBZUYsR0FBR0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NhbGltb3YtcmVhY3QvLi9wYWdlcy9fYXBwLmpzP2UwYWQiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFByZWxvYWRlciBmcm9tIFwiQC9zcmMvY29tcG9uZW50cy9QcmVsb2FkZXJcIjtcclxuaW1wb3J0IFN3aXRjaGVyIGZyb20gXCJAL3NyYy9jb21wb25lbnRzL1N3aXRjaGVyXCI7XHJcbmltcG9ydCBQb3J0Zm9saW9IZWFkIGZyb20gXCJAL3NyYy9Qb3J0Zm9saW9IZWFkXCI7XHJcbmltcG9ydCBcIkAvc3R5bGVzL2dsb2JhbHMuY3NzXCI7XHJcbmltcG9ydCB7IEZyYWdtZW50IH0gZnJvbSBcInJlYWN0XCI7XHJcblxyXG5jb25zdCBBcHAgPSAoeyBDb21wb25lbnQsIHBhZ2VQcm9wcyB9KSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxGcmFnbWVudD5cclxuICAgICAgPFBvcnRmb2xpb0hlYWQgLz5cclxuICAgICAgPFN3aXRjaGVyIC8+XHJcbiAgICAgIDxQcmVsb2FkZXIgLz5cclxuICAgICAgPENvbXBvbmVudCB7Li4ucGFnZVByb3BzfSAvPlxyXG4gICAgPC9GcmFnbWVudD5cclxuICApO1xyXG59O1xyXG5leHBvcnQgZGVmYXVsdCBBcHA7XHJcbiJdLCJuYW1lcyI6WyJQcmVsb2FkZXIiLCJTd2l0Y2hlciIsIlBvcnRmb2xpb0hlYWQiLCJGcmFnbWVudCIsIkFwcCIsIkNvbXBvbmVudCIsInBhZ2VQcm9wcyJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./pages/_app.js\n");
 
 /***/ }),
 
-/***/ 764:
+/***/ "./src/PortfolioHead.js":
+/*!******************************!*\
+  !*** ./src/PortfolioHead.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst PortfolioHead = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"title\", {\n                children: \"David's Portfolio\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n                lineNumber: 5,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                charSet: \"utf-8\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n                lineNumber: 6,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"meta\", {\n                name: \"viewport\",\n                content: \"width=device-width, initial-scale=1.0\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n                lineNumber: 7,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                rel: \"preconnect\",\n                href: \"https://fonts.googleapis.com\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n                lineNumber: 9,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                rel: \"preconnect\",\n                href: \"https://fonts.gstatic.com\",\n                crossOrigin: \"\"\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n                lineNumber: 10,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\PortfolioHead.js\",\n        lineNumber: 4,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PortfolioHead);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvUG9ydGZvbGlvSGVhZC5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFBNkI7QUFDN0IsTUFBTUMsZ0JBQWdCLElBQU07SUFDMUIscUJBQ0UsOERBQUNELGtEQUFJQTs7MEJBQ0gsOERBQUNFOzBCQUFNOzs7Ozs7MEJBQ1AsOERBQUNDO2dCQUFLQyxTQUFROzs7Ozs7MEJBQ2QsOERBQUNEO2dCQUFLRSxNQUFLO2dCQUFXQyxTQUFROzs7Ozs7MEJBRTlCLDhEQUFDQztnQkFBS0MsS0FBSTtnQkFBYUMsTUFBSzs7Ozs7OzBCQUM1Qiw4REFBQ0Y7Z0JBQUtDLEtBQUk7Z0JBQWFDLE1BQUs7Z0JBQTRCQyxhQUFZOzs7Ozs7Ozs7Ozs7QUFHMUU7QUFDQSxpRUFBZVQsYUFBYUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NhbGltb3YtcmVhY3QvLi9zcmMvUG9ydGZvbGlvSGVhZC5qcz9kNjVlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcclxuY29uc3QgUG9ydGZvbGlvSGVhZCA9ICgpID0+IHtcclxuICByZXR1cm4gKFxyXG4gICAgPEhlYWQ+XHJcbiAgICAgIDx0aXRsZT5EYXZpZCdzIFBvcnRmb2xpbzwvdGl0bGU+XHJcbiAgICAgIDxtZXRhIGNoYXJTZXQ9XCJ1dGYtOFwiIC8+XHJcbiAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MS4wXCIgLz5cclxuICAgICAgey8qIFRlbXBsYXRlIEdvb2dsZSBGb250cyAqL31cclxuICAgICAgPGxpbmsgcmVsPVwicHJlY29ubmVjdFwiIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tXCIgLz5cclxuICAgICAgPGxpbmsgcmVsPVwicHJlY29ubmVjdFwiIGhyZWY9XCJodHRwczovL2ZvbnRzLmdzdGF0aWMuY29tXCIgY3Jvc3NPcmlnaW49XCJcIiAvPlxyXG4gICAgPC9IZWFkPlxyXG4gICk7XHJcbn07XHJcbmV4cG9ydCBkZWZhdWx0IFBvcnRmb2xpb0hlYWQ7XHJcbiJdLCJuYW1lcyI6WyJIZWFkIiwiUG9ydGZvbGlvSGVhZCIsInRpdGxlIiwibWV0YSIsImNoYXJTZXQiLCJuYW1lIiwiY29udGVudCIsImxpbmsiLCJyZWwiLCJocmVmIiwiY3Jvc3NPcmlnaW4iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/PortfolioHead.js\n");
+
+/***/ }),
+
+/***/ "./src/components/Preloader.js":
+/*!*************************************!*\
+  !*** ./src/components/Preloader.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n\nconst Preloader = ()=>{\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        id: \"preloader\",\n        className: \"preloaded\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"line\"\n        }, void 0, false, {\n            fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Preloader.js\",\n            lineNumber: 4,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Preloader.js\",\n        lineNumber: 3,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Preloader);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9QcmVsb2FkZXIuanMuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7OztBQUFBLE1BQU1BLFlBQVksSUFBTTtJQUN0QixxQkFDRSw4REFBQ0M7UUFBSUMsSUFBRztRQUFZQyxXQUFVO2tCQUM1Qiw0RUFBQ0Y7WUFBSUUsV0FBVTs7Ozs7Ozs7Ozs7QUFHckI7QUFDQSxpRUFBZUgsU0FBU0EsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NhbGltb3YtcmVhY3QvLi9zcmMvY29tcG9uZW50cy9QcmVsb2FkZXIuanM/MTc4OCJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBQcmVsb2FkZXIgPSAoKSA9PiB7XHJcbiAgcmV0dXJuIChcclxuICAgIDxkaXYgaWQ9XCJwcmVsb2FkZXJcIiBjbGFzc05hbWU9XCJwcmVsb2FkZWRcIj5cclxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJsaW5lXCIgLz5cclxuICAgIDwvZGl2PlxyXG4gICk7XHJcbn07XHJcbmV4cG9ydCBkZWZhdWx0IFByZWxvYWRlcjtcclxuIl0sIm5hbWVzIjpbIlByZWxvYWRlciIsImRpdiIsImlkIiwiY2xhc3NOYW1lIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/components/Preloader.js\n");
+
+/***/ }),
+
+/***/ "./src/components/Switcher.js":
+/*!************************************!*\
+  !*** ./src/components/Switcher.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/head */ \"next/head\");\n/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconst colors = [\n    {\n        id: 1,\n        name: \"yellow\"\n    },\n    {\n        id: 2,\n        name: \"green\"\n    },\n    {\n        id: 3,\n        name: \"red\"\n    },\n    {\n        id: 4,\n        name: \"blue\"\n    },\n    {\n        id: 5,\n        name: \"orange\"\n    },\n    {\n        id: 6,\n        name: \"yellowgreen\"\n    },\n    {\n        id: 7,\n        name: \"pink\"\n    },\n    {\n        id: 8,\n        name: \"goldenrod\"\n    }\n];\nconst Switcher = ()=>{\n    const [color, setColor] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(\"yellow\");\n    const [toggle, setToggle] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)(false);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(react__WEBPACK_IMPORTED_MODULE_2__.Fragment, {\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_head__WEBPACK_IMPORTED_MODULE_1___default()), {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"link\", {\n                    rel: \"stylesheet\",\n                    href: `css/skins/${color}.css`\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                    lineNumber: 20,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                lineNumber: 19,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                id: \"switcher\",\n                className: toggle ? \"open\" : \"close\",\n                style: {\n                    display: \"block\"\n                },\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                    className: \"content-switcher\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h4\", {\n                            children: \"COLOR SWITCHER\"\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                            lineNumber: 28,\n                            columnNumber: 11\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"ul\", {\n                            children: colors.map((color)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"li\", {\n                                    children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"a\", {\n                                        href: \"#\",\n                                        title: color.name,\n                                        className: \"color\",\n                                        onClick: ()=>setColor(color.name),\n                                        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                            src: `assets/styleswitcher/${color.name}.png`,\n                                            alt: color.name\n                                        }, void 0, false, {\n                                            fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                                            lineNumber: 39,\n                                            columnNumber: 19\n                                        }, undefined)\n                                    }, color.id, false, {\n                                        fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                                        lineNumber: 32,\n                                        columnNumber: 17\n                                    }, undefined)\n                                }, color.id, false, {\n                                    fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                                    lineNumber: 31,\n                                    columnNumber: 15\n                                }, undefined))\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                            lineNumber: 29,\n                            columnNumber: 11\n                        }, undefined),\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                            id: \"hideSwitcher\",\n                            onClick: ()=>setToggle(false),\n                            children: \"\\xd7\"\n                        }, void 0, false, {\n                            fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                            lineNumber: 47,\n                            columnNumber: 11\n                        }, undefined)\n                    ]\n                }, void 0, true, {\n                    fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                    lineNumber: 27,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                lineNumber: 22,\n                columnNumber: 7\n            }, undefined),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                id: \"showSwitcher\",\n                className: `styleSecondColor ${toggle ? \"close\" : \"open\"}`,\n                onClick: ()=>setToggle(true),\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"i\", {\n                    className: \"fa fa-cog\"\n                }, void 0, false, {\n                    fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                    lineNumber: 57,\n                    columnNumber: 9\n                }, undefined)\n            }, void 0, false, {\n                fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n                lineNumber: 52,\n                columnNumber: 7\n            }, undefined)\n        ]\n    }, void 0, true, {\n        fileName: \"C:\\\\Users\\\\snypi\\\\Desktop\\\\portfolio\\\\src\\\\components\\\\Switcher.js\",\n        lineNumber: 18,\n        columnNumber: 5\n    }, undefined);\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Switcher);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvY29tcG9uZW50cy9Td2l0Y2hlci5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUE2QjtBQUNjO0FBQzNDLE1BQU1HLFNBQVM7SUFDYjtRQUFFQyxJQUFJO1FBQUdDLE1BQU07SUFBUztJQUN4QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBUTtJQUN2QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBTTtJQUNyQjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBTztJQUN0QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBUztJQUN4QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBYztJQUM3QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBTztJQUN0QjtRQUFFRCxJQUFJO1FBQUdDLE1BQU07SUFBWTtDQUM1QjtBQUNELE1BQU1DLFdBQVcsSUFBTTtJQUNyQixNQUFNLENBQUNDLE9BQU9DLFNBQVMsR0FBR04sK0NBQVFBLENBQUM7SUFDbkMsTUFBTSxDQUFDTyxRQUFRQyxVQUFVLEdBQUdSLCtDQUFRQSxDQUFDLEtBQUs7SUFFMUMscUJBQ0UsOERBQUNELDJDQUFRQTs7MEJBQ1AsOERBQUNELGtEQUFJQTswQkFDSCw0RUFBQ1c7b0JBQUtDLEtBQUk7b0JBQWFDLE1BQU0sQ0FBQyxVQUFVLEVBQUVOLE1BQU0sSUFBSSxDQUFDOzs7Ozs7Ozs7OzswQkFFdkQsOERBQUNPO2dCQUNDVixJQUFHO2dCQUNIVyxXQUFXTixTQUFTLFNBQVMsT0FBTztnQkFDcENPLE9BQU87b0JBQUVDLFNBQVM7Z0JBQVE7MEJBRTFCLDRFQUFDSDtvQkFBSUMsV0FBVTs7c0NBQ2IsOERBQUNHO3NDQUFHOzs7Ozs7c0NBQ0osOERBQUNDO3NDQUNFaEIsT0FBT2lCLEdBQUcsQ0FBQyxDQUFDYixzQkFDWCw4REFBQ2M7OENBQ0MsNEVBQUNDO3dDQUNDVCxNQUFLO3dDQUNMVSxPQUFPaEIsTUFBTUYsSUFBSTt3Q0FDakJVLFdBQVU7d0NBRVZTLFNBQVMsSUFBTWhCLFNBQVNELE1BQU1GLElBQUk7a0RBRWxDLDRFQUFDb0I7NENBQ0NDLEtBQUssQ0FBQyxxQkFBcUIsRUFBRW5CLE1BQU1GLElBQUksQ0FBQyxJQUFJLENBQUM7NENBQzdDc0IsS0FBS3BCLE1BQU1GLElBQUk7Ozs7Ozt1Q0FMWkUsTUFBTUgsRUFBRTs7Ozs7bUNBTFJHLE1BQU1ILEVBQUU7Ozs7Ozs7Ozs7c0NBZ0JyQiw4REFBQ1U7NEJBQUlWLElBQUc7NEJBQWVvQixTQUFTLElBQU1kLFVBQVUsS0FBSztzQ0FBRzs7Ozs7Ozs7Ozs7Ozs7Ozs7MEJBSzVELDhEQUFDSTtnQkFDQ1YsSUFBRztnQkFDSFcsV0FBVyxDQUFDLGlCQUFpQixFQUFFTixTQUFTLFVBQVUsTUFBTSxDQUFDLENBQUM7Z0JBQzFEZSxTQUFTLElBQU1kLFVBQVUsSUFBSTswQkFFN0IsNEVBQUNrQjtvQkFBRWIsV0FBVTs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFJckI7QUFDQSxpRUFBZVQsUUFBUUEsRUFBQyIsInNvdXJjZXMiOlsid2VicGFjazovL3NhbGltb3YtcmVhY3QvLi9zcmMvY29tcG9uZW50cy9Td2l0Y2hlci5qcz8zZDQxIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gXCJuZXh0L2hlYWRcIjtcclxuaW1wb3J0IHsgRnJhZ21lbnQsIHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XHJcbmNvbnN0IGNvbG9ycyA9IFtcclxuICB7IGlkOiAxLCBuYW1lOiBcInllbGxvd1wiIH0sXHJcbiAgeyBpZDogMiwgbmFtZTogXCJncmVlblwiIH0sXHJcbiAgeyBpZDogMywgbmFtZTogXCJyZWRcIiB9LFxyXG4gIHsgaWQ6IDQsIG5hbWU6IFwiYmx1ZVwiIH0sXHJcbiAgeyBpZDogNSwgbmFtZTogXCJvcmFuZ2VcIiB9LFxyXG4gIHsgaWQ6IDYsIG5hbWU6IFwieWVsbG93Z3JlZW5cIiB9LFxyXG4gIHsgaWQ6IDcsIG5hbWU6IFwicGlua1wiIH0sXHJcbiAgeyBpZDogOCwgbmFtZTogXCJnb2xkZW5yb2RcIiB9LFxyXG5dO1xyXG5jb25zdCBTd2l0Y2hlciA9ICgpID0+IHtcclxuICBjb25zdCBbY29sb3IsIHNldENvbG9yXSA9IHVzZVN0YXRlKFwieWVsbG93XCIpO1xyXG4gIGNvbnN0IFt0b2dnbGUsIHNldFRvZ2dsZV0gPSB1c2VTdGF0ZShmYWxzZSk7XHJcblxyXG4gIHJldHVybiAoXHJcbiAgICA8RnJhZ21lbnQ+XHJcbiAgICAgIDxIZWFkPlxyXG4gICAgICAgIDxsaW5rIHJlbD1cInN0eWxlc2hlZXRcIiBocmVmPXtgY3NzL3NraW5zLyR7Y29sb3J9LmNzc2B9IC8+XHJcbiAgICAgIDwvSGVhZD5cclxuICAgICAgPGRpdlxyXG4gICAgICAgIGlkPVwic3dpdGNoZXJcIlxyXG4gICAgICAgIGNsYXNzTmFtZT17dG9nZ2xlID8gXCJvcGVuXCIgOiBcImNsb3NlXCJ9XHJcbiAgICAgICAgc3R5bGU9e3sgZGlzcGxheTogXCJibG9ja1wiIH19XHJcbiAgICAgID5cclxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cImNvbnRlbnQtc3dpdGNoZXJcIj5cclxuICAgICAgICAgIDxoND5DT0xPUiBTV0lUQ0hFUjwvaDQ+XHJcbiAgICAgICAgICA8dWw+XHJcbiAgICAgICAgICAgIHtjb2xvcnMubWFwKChjb2xvcikgPT4gKFxyXG4gICAgICAgICAgICAgIDxsaSBrZXk9e2NvbG9yLmlkfT5cclxuICAgICAgICAgICAgICAgIDxhXHJcbiAgICAgICAgICAgICAgICAgIGhyZWY9XCIjXCJcclxuICAgICAgICAgICAgICAgICAgdGl0bGU9e2NvbG9yLm5hbWV9XHJcbiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT1cImNvbG9yXCJcclxuICAgICAgICAgICAgICAgICAga2V5PXtjb2xvci5pZH1cclxuICAgICAgICAgICAgICAgICAgb25DbGljaz17KCkgPT4gc2V0Q29sb3IoY29sb3IubmFtZSl9XHJcbiAgICAgICAgICAgICAgICA+XHJcbiAgICAgICAgICAgICAgICAgIDxpbWdcclxuICAgICAgICAgICAgICAgICAgICBzcmM9e2Bhc3NldHMvc3R5bGVzd2l0Y2hlci8ke2NvbG9yLm5hbWV9LnBuZ2B9XHJcbiAgICAgICAgICAgICAgICAgICAgYWx0PXtjb2xvci5uYW1lfVxyXG4gICAgICAgICAgICAgICAgICAvPlxyXG4gICAgICAgICAgICAgICAgPC9hPlxyXG4gICAgICAgICAgICAgIDwvbGk+XHJcbiAgICAgICAgICAgICkpfVxyXG4gICAgICAgICAgPC91bD5cclxuICAgICAgICAgIDxkaXYgaWQ9XCJoaWRlU3dpdGNoZXJcIiBvbkNsaWNrPXsoKSA9PiBzZXRUb2dnbGUoZmFsc2UpfT5cclxuICAgICAgICAgICAgw5dcclxuICAgICAgICAgIDwvZGl2PlxyXG4gICAgICAgIDwvZGl2PlxyXG4gICAgICA8L2Rpdj5cclxuICAgICAgPGRpdlxyXG4gICAgICAgIGlkPVwic2hvd1N3aXRjaGVyXCJcclxuICAgICAgICBjbGFzc05hbWU9e2BzdHlsZVNlY29uZENvbG9yICR7dG9nZ2xlID8gXCJjbG9zZVwiIDogXCJvcGVuXCJ9YH1cclxuICAgICAgICBvbkNsaWNrPXsoKSA9PiBzZXRUb2dnbGUodHJ1ZSl9XHJcbiAgICAgID5cclxuICAgICAgICA8aSBjbGFzc05hbWU9XCJmYSBmYS1jb2dcIiAvPlxyXG4gICAgICA8L2Rpdj5cclxuICAgIDwvRnJhZ21lbnQ+XHJcbiAgKTtcclxufTtcclxuZXhwb3J0IGRlZmF1bHQgU3dpdGNoZXI7XHJcbiJdLCJuYW1lcyI6WyJIZWFkIiwiRnJhZ21lbnQiLCJ1c2VTdGF0ZSIsImNvbG9ycyIsImlkIiwibmFtZSIsIlN3aXRjaGVyIiwiY29sb3IiLCJzZXRDb2xvciIsInRvZ2dsZSIsInNldFRvZ2dsZSIsImxpbmsiLCJyZWwiLCJocmVmIiwiZGl2IiwiY2xhc3NOYW1lIiwic3R5bGUiLCJkaXNwbGF5IiwiaDQiLCJ1bCIsIm1hcCIsImxpIiwiYSIsInRpdGxlIiwib25DbGljayIsImltZyIsInNyYyIsImFsdCIsImkiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./src/components/Switcher.js\n");
+
+/***/ }),
+
+/***/ "./styles/globals.css":
+/*!****************************!*\
+  !*** ./styles/globals.css ***!
+  \****************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 689:
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 "use strict";
@@ -240,11 +88,14 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -255,7 +106,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__(592));
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.js"));
 module.exports = __webpack_exports__;
 
 })();
